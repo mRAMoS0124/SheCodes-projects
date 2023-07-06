@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>
+        Women in STEM
+    </title>
+</head>
+
+<style>
+    h1 {
+        text-align: center;
+        color: rgb(226, 43, 214);
+
+    }
+
+    h2 {
+        text-align: center;
+        border: 1px solid rgb(239, 241, 104);
+        padding: 15px;
+        font-size: 18px;
+        border-radius: 4px;
+    }
+
+    img {
+        display: block;
+        margin: auto;
+        max-width: 100%;
+        border-radius: 4px;
+    }
+
+    p {
+        line-height: 1.5;
+        font-size: 16px;
+        margin: 20px 0 10px;
+
+    }
+
+    button {
+        display: block;
+        margin: 30px auto;
+        background-color: rgb(89, 217, 110);
+        color: white;
+        font: 30px;
+        padding: 20px 30px;
+        border: none;
+        border-radius: 40px;
+        box-shadow: 1px 5px rgb(0, 0, 0, 0.3);
+        transition: all 200ms ease;
+
+    }
+
+    button:hover {
+        opacity: 0.9;
+        cursor: pointer;
+        text-transform: uppercase;
+    }
+
+    .learnmore {
+        display: block;
+        text-align: center;
+        color: rgb(255, 140, 173);
+        margin: 10px;
+        text-decoration: none;
+        font-size: 16px;
+    }
+
+    .learnmore:hover {
+        text-decoration: underline;
+    }
+
+    .footer {
+        text-align: center;
+
+    }
+
+    .container {
+        max-width: 800px;
+        margin: 0 auto;
+        padding: 30px 60px;
+        box-shadow: rgb(30, 35, 85, 0.08) 0px 8px 8px 0;
+        background-image: linear-gradient(to top, #6cd6ee 0%, #c4e5f9 100%);
+        border-radius: 25px;
+    }
+
+    .insta {
+        display: block;
+        text-align: center;
+    }
+</style>
+
+<body>
+    <div class="container">
+        <h1>
+            <em>Women in STEM</em>
+        </h1>
+        <h2>
+            Why it is important to introduce young girls to STEM 👩‍💻
+        </h2>
+        <hr>
+        <img src="https://www.aces.edu/wp-content/uploads/2019/09/Woman-Teacher-With-Female-College-Students-Building-Machine-In-Science-Robotics-Or-Engineering-Class-1133836360_2124x1416.jpeg"
+            alt="Girls learning STEM" width="500" />
+        <hr>
+        <p>
+            Girls and Women are systematically tracked away from science and math throughout their education, limiting
+            their
+            access, preparation and opportunities to go into these fields as adults.
+            Women make up only 28% of the workforce in science, technology, engineering and math (STEM), and men vastly
+            outnumber
+            women majoring in most STEM fields in college. The gender gaps are particularly high in some of the
+            fastest-growing and
+            highest-paid jobs of the future, like computer science and engineering.
+            <br />
+            <a href="https://www.aauw.org/resources/research/the-stem-gap/" target="_blank" class="learnmore">
+
+                <strong>Learn more</strong>
+            </a>
+        </p>
+        <button>
+            Thanks
+        </button>
+        <p class="footer">
+            This page was built by:
+            <a href="https://www.linkedin.com/in/marisol-ramos-67944b66/" target="_blank">
+                Marisol Ramos</a>💛
+        </p>
+
+        <script>
+            function thanks() {
+                let firstName = prompt("What is your first name?");
+                let lastName = prompt("What is your last name?");
+                let satisfaction = prompt("Did reading this make you feel empowered? Yes/No answer only")
+                    .toLowerCase()
+                    .trim();
+
+                if (satisfaction === "yes") {
+                    alert("😊 " + " Thanks for stopping by " + firstName + " " + lastName + ", We will keep in touch!");
+                } else {
+                    alert("😞 " + "Sorry we couldn't make a difference today, " + firstName + " " + lastName + ". Hope to see you back soon!");
+                }
+
+            }
+
+
+            let thanksButton = document.querySelector("button");
+            thanksButton.addEventListener("click", thanks);
+
+
+        </script>
+        <span class="insta">
+            <a href="https://www.instagram.com/maude_ee_soul">
+                Follow me on Instagram</a>
+        </span>
+    </div>
+</body>
+
+
+</html>
